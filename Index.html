@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CancerDetector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    
+    <div class="chat-container">
+       
+        <div class="chat-header">
+            <h1>CancerDetector</h1>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+
+     
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <p>Welcome to CancerDetector! Upload a medical image or ask any question for assistance in detecting cancer.</p>
+            </div>
+        </div>
+
+        
+        <form class="input-container" id="message-form" enctype="multipart/form-data">
+            <label for="file-upload" class="file-label">
+                <img src="attach-icon.png" alt="Attach" class="attach-icon">
+                <input type="file" id="file-upload" accept="image/*" class="file-input">
+            </label>
+            <input type="text" id="user-input" placeholder="Message CancerDetector" autocomplete="off" class="text-input">
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
